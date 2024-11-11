@@ -2,16 +2,37 @@
 </script>
 
 <template>
-  <div class="background">
-    <div>
-      Hello World
+  <div id="background">
+    <div class="Top">
+      <div>
+        <p>Hello World</p>
+        <div class="search">
+          <input type="search"></input>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style>
-.background{
+#background {
+  display: flex;
+  flex-direction: row;
   height: 100vh;
+  width: 100%;
+}
+
+input[type="search"] {
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.Top {
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 </style>

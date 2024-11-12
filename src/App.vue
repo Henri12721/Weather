@@ -5,9 +5,9 @@
   <div id="background">
     <div class="Top">
       <div>
-        <p>Hello World</p>
         <div class="search">
           <input type="search"></input>
+          <button @click="executeScript()"></button>
         </div>
       </div>
     </div>
@@ -27,7 +27,11 @@ input[type="search"] {
   margin: 0 auto;
   display: block;
   margin-top: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="search"]:hover {
+  background-color: lightgray;
 }
 
 .Top {
@@ -36,3 +40,14 @@ input[type="search"] {
   width: 100%;
 }
 </style>
+
+<script>
+import axios from 'axios';
+export default {
+  methods: {
+    executeScript() {
+      axios.post()
+    }
+  }
+}
+</script>

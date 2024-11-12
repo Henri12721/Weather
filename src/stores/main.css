@@ -53,3 +53,16 @@
     isolation: isolate;
   }
   
+  input[type="search"] {
+    padding-left: 8px;
+  }
+  
+  input[type="search"]:hover {
+    background-color: rgba(234, 234, 234, 1);
+    padding-left: 8px;
+  
+  }
+  
+  input[type="button"]:hover {
+    background-color: rgba(234, 234, 234, 1);
+  }
